@@ -1,0 +1,5 @@
+source_version,role,max_standard_gbp,exceptions_permitted
+policy_v4,senior_underwriter,75000,no
+policy_v4,credit_manager,100000,yes
+policy_v4,credit_committee,150000,yes
+march_slide,senior_underwriter,100000,not_stated

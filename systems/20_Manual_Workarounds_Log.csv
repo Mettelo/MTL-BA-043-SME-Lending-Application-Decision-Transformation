@@ -1,0 +1,5 @@
+workaround_id,application_id,team,observation,control_evidence
+W01,A002,operations,merged_email_and_web_rows,manual_note
+W02,A003,sales,forwarded_accounts_to_underwriter,email_only
+W03,A005,underwriting,held_case_for_bureau_mismatch,workbook_note
+W04,A009,operations,reminder_not_cancelled_after_withdrawal,none

@@ -1,0 +1,6 @@
+request_id,application_id,request_date,document,reason,received_date
+RW01,A002,2026-06-03,bank_evidence,missing_from_case_folder,2026-06-08
+RW02,A003,2026-06-04,accounts,period_missing,2026-06-09
+RW03,A003,2026-06-10,accounts,period_missing,2026-06-15
+RW04,A005,2026-06-10,company_details,bureau_mismatch,
+RW05,A009,2026-06-22,bank_evidence,stale_document,
