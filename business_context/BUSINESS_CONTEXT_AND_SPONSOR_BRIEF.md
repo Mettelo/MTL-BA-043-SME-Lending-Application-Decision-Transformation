@@ -1,7 +1,5 @@
-> **Commission note:** This is historical fictional source evidence. Requests for full lifecycle outputs or pilot delivery are stakeholder ambitions to evaluate. The assessed scope and endpoint are defined in [the current project brief](../project/PROJECT_BRIEF.md). Later pilot evidence is optional and is not participant-executed testing.
-
 # Alderbridge SME finance — business context and sponsor initiation brief
-**Mettelo Business Analyst Project Studio · MTL-BA-043 · v2.0 · Stage 1**
+**Mettelo Business Analyst Project Studio · MTL-BA-043 · aligned pathway edition · Stage 1**
 Issued 6 July 2026 by Daniel Reed, Chief Operating Officer. All local people, organisations, policies, figures and case records are synthetic.
 
 ## Organisation and operating model
@@ -41,30 +39,69 @@ Customers face uncertainty about what is missing, who owns the next update and w
 
 Planning rates are £28/hour Operations, £45/hour relationship management, £60/hour underwriting and £75/hour specialist Risk/Compliance. These are loaded capacity values, not guaranteed cash avoidance. No reliable population of lost business, fraud loss, arrears, default, funding conversion or risk-adjusted profitability is supplied.
 
-Doing nothing may preserve friction, inconsistent communications and weak evidence retrieval as applications grow. Uncontrolled automation could make unsuitable or unauditable decisions faster, create new data-use obligations or expand the product perimeter without approval. The business case must consider both, with uncertainty visible.
+Doing nothing may preserve friction, inconsistent communications and weak evidence retrieval as applications grow. Uncontrolled automation could make unsuitable or unauditable decisions faster, create new data-use obligations or expand the product perimeter without approval. Any later funding decision would need to consider both, with uncertainty visible.
 
-## Sponsor commission, authority and bias
-Daniel is COO, accountable for operational improvement and sponsor funding proposals. The board approves major investment. Credit Risk owns appetite/delegation; Compliance reviews applicability and supplier/data issues; Finance owns funding reconciliation. Sponsor approval cannot substitute for those authorities.
 
-“I want applicants to stop sending the same thing repeatedly. I initially thought automation would be the big opportunity. Show me what decisions actually need judgement, which checks are duplicated, what complete means and whether a workflow alone solves the customer problem. Do not tell me that a score or a fast screen proves a safe decision.”
+## Business need for this commission
 
-Initial envelope: £150,000 one-off including £15,000 already committed to discovery/support; annual incremental operating ceiling £30,000, excluding recoverable VAT. Include integration, verification charges, evidence repair, governance, testing, internal backfill, training and support. No vendor or model purchase is approved.
+An assisted SME lending application passes between Sales, Operations and Underwriting, but definitions of completeness, exception handling and decision authority are not consistently understood. Historic slides, policy versions and incomplete rationale records make it difficult to specify trustworthy system behaviour.
 
-Analysis runs 6 July–28 August, with a desired limited operational pilot 12 October. The isolated August prototype is not production lending. Staff can attend one focused 45-minute session weekly. A September policy change is being discussed but not yet approved at initiation; the later notice supplies it.
+The business cannot responsibly ask a delivery team to automate an ambiguous policy. It needs a functional specification that explains what users and the system must do, which decisions remain human, and how reviewers can check rules, exceptions and policy applicability.
 
-## Proposed outcomes and contested success measures
-Daniel proposes 80% of verified-complete applications decided within five working days. Sales wants a customer-visible commitment from first receipt; Risk wants unresolved exceptions and evidence quality visible. These are proposals, not an approved set of requirements or a statutory deadline.
+## Illustrative business situation to investigate
 
-Desired outcomes: clearer next action/status, fewer avoidable repeat requests, appropriate human oversight, traceable evidence/authority/rationale, accountable exceptions and an affordable process customers and staff can use. The BA must propose definitions, ownership, baseline, exclusions and evaluation timing.
+A relationship manager submits an application and supporting documents for a UK limited company. Operations checks receipt and verification; Underwriting may request evidence or raise a mismatch. A permitted decision-maker must act under the applicable authority and policy. Meanwhile an applicant may withdraw, a reminder may be queued or the requested amount may change. The BA must specify these interactions and unresolved cases; the source scenario is not a completed use-case specification.
 
-## Scope, exclusions and dependencies
-Investigate application receipt, identity/document hand-off, verification, underwriting, authority, decision communication and withdrawal/reminder handling for the stated product. Include policy/version control, data ownership, exception handling, audit and transition. Funding handover is a dependency; a redesign of treasury, collections or credit pricing is outside scope.
+This is a source scenario. Your team must analyse it; it is not an approved process, detailed use case or designed solution.
 
-No automatic approvals, new bureau source, real applicant records, model-training reuse or extension to sole traders is authorised. Dependencies include policy applicability, current delegation, vendor/data terms, bureau contract, underwriting availability, document and identity reconciliation, support and operational training.
+## Sponsor commission and authority
 
-Known concerns include conflicting definitions of complete, old delegation slides, missing rationale/version references, duplicate intake, mismatch flags and misleading indicative language. These are source concerns, not a completed participant RAID or root-cause report.
+Daniel Reed, Chief Operating Officer commissions your team as functional business analysts. The decision is: **What functional behaviour, data, states and controlled rules should an assisted application-to-decision workflow support, and is that specification coherent enough for design estimation and business validation?**
 
-## Decisions and unknowns
-Daniel initially names Sales, Underwriting, Risk, Compliance, Operations, IT, Finance and an applicant representative. He acknowledges one customer does not represent all sectors or accessibility needs. Missing evidence includes end-to-end touch time, exact reason for every repeat request, complete model validation, vendor data terms, funded-loan performance and who owns each customer update.
+The requested handover is: **A versioned FRD supported by detailed use cases, decision tables, data/state models and requirements-to-validation traceability.**
 
-Leadership needs an intervention/sequence recommendation with complete costs, priorities, controls, readiness conditions, residual uncertainty and a value-evaluation plan. Current-tool configuration, process/document ownership changes, targeted workflow or a qualified deferral are possible. The pack supplies no preferred solution, future rule set, requirements, credit model or completed assurance.
+Sales wants an early response and fewer steps, Operations needs clear next actions, Underwriting distinguishes receipt from verified completeness, and Risk/Compliance require accountable authority, exceptions and audit. A vendor claim about automation is not an approved functional requirement.
+
+The sponsor can request analysis but cannot substitute for Risk, Compliance, underwriting-policy, security and funding owners. Identify material approvals and unknowns without fabricating named reviewers or sign-off.
+
+## Scope and exclusions
+
+**Included:** Receipt, document requests, verification, completeness, application status, authorised decisions, communication, withdrawal, exceptions and audit for unsecured £30,000–£150,000 lending to UK limited companies. Analyse current and prospective policy applicability explicitly.
+
+**Outside this assignment:** No automatic approval model, real credit decision, new bureau integration, sole-trader/partnership expansion, collections or pricing redesign. No full process-transformation business case, product backlog, software build or executed UAT programme is required.
+
+## Constraints and evidence limitations
+
+The initial £150,000 one-off envelope includes £15,000 committed, with a £30,000 annual incremental ceiling. Treat it as a constraint when identifying design dependencies and likely scope; this commission does not approve expenditure or demand a procurement recommendation.
+
+The learning commission lasts 6 cohort weeks. Original dates in operational records remain source history; later operational ambitions do not extend the assessed scope. Staff availability is limited: plan proportionate elicitation using supplied interviews and record follow-up questions when real access is unavailable.
+
+The dataset is constructed, observed at its stated cutoff and incomplete for some business questions. An absent event is not always proof an event did not happen. Do not claim representative research, causality, approved targets or realised outcomes merely from these records. Use [the data guide](../evidence/DATA_GUIDE.md) and [source provenance](../reference/OFFICIAL_REFERENCES_AND_SOURCE_PROVENANCE.md).
+
+## How the evidence supports the work
+
+| Evidence | Analytical purpose | Relevant tasks |
+|---|---|---|
+| Stakeholder accounts and functional transaction supplement | Find actors, triggers, main/alternative flows and unresolved behaviour. | F1–F3 |
+| Policies and authority/version notices | Analyse authority boundaries, exceptions and effective-date decisions. | F2–F4 |
+| Applications, document requests and decision audit | Understand entities, states, missing information and actual exception records. | F3–F5 |
+| Technology context and data guide | Separate observed fields/capability from proposed functional behaviour. | F2–F5 |
+| Automation and data-use challenges | Validate scope and constraints; revise specification and traceability without accepting claims as requirements. | F6–F7 |
+
+## What leadership needs to receive
+
+A reviewer can follow a material need from source evidence through a functional requirement, use case, rule/data/state behaviour and proposed validation scenario. Policy gaps remain explicit decisions for owners rather than invented approved rules.
+
+| Task | Required handover content | Assessment weight |
+|---|---|---|
+| F1 | Functional boundary; actor inventory; elicitation issue log and external dependencies. | 10% |
+| F2 | FRD with stable IDs, source references, functional/quality constraints, testable acceptance conditions and unresolved decisions. | 25% |
+| F3 | Use-case diagram; at least five detailed specifications with triggers, preconditions, main/alternative/exception flows and postconditions. | 20% |
+| F4 | Decision tables; policy/version applicability specification; exact authority boundaries and unresolved owner decisions. | 15% |
+| F5 | Conceptual data model; data dictionary; application state model including invalid transitions and audit needs. | 15% |
+| F6 | Requirements traceability matrix; boundary/exception scenarios with expected behaviour; review log distinguishing unexecuted from executed checks. | 10% |
+| F7 | Versioned specification index; decision summary; change/review record; design-estimation dependencies and readiness recommendation. | 5% |
+
+Use [the task specification](../project/TASKS_DELIVERABLES_AND_ACCEPTANCE_CRITERIA.md) for the four acceptance criteria per task and [the submission checklist](../submission/DELIVERABLES_CHECKLIST.md) for the exact handover package. These define the commission; historical stakeholder ambitions are inputs to evaluate, not extra mandatory portfolios.
+
+No preferred solution or completed learner artefacts are provided.

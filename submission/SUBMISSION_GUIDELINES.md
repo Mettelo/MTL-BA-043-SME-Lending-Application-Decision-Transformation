@@ -1,6 +1,6 @@
 # Mettelo BA-043 — separate delivery repository and submission guidelines
 
-**Mettelo Business Analyst Project Studio · MTL-BA-043 · v2.0**  
+**Mettelo Business Analyst Project Studio · MTL-BA-043 · aligned pathway edition**  
 This guide adapts the established Mettelo submission and team-repository standards linked in [source provenance](../reference/OFFICIAL_REFERENCES_AND_SOURCE_PROVENANCE.md). The master is a resource library, not a place to submit participant answers.
 
 ## 1. Create the delivery repository
@@ -41,17 +41,25 @@ Each contributor uses their own GitHub account. Keep CONTRIBUTIONS.md current wi
 
 For individual delivery, identify your own work, source material, external assistance and any simulated/unavailable validation. A stakeholder interview supplied by Mettelo is source evidence, not an interview you personally conducted with a real client.
 
-## 6. Required pathway outputs
+## 6. Exact required team handover
 
-- **F1:** Scope, actor inventory and elicitation issue log.
-- **F2:** Functional Requirements Document (FRD).
-- **F3:** Use-case diagram and at least five detailed use-case specifications.
-- **F4:** Decision tables and rule/version applicability specification.
-- **F5:** Conceptual data model, data dictionary and application state model.
-- **F6:** Requirements traceability matrix, boundary/exception scenarios and review log.
-- **F7:** Versioned functional specification and decision summary.
+**Decision the team supports:** What functional behaviour, data, states and controlled rules should an assisted application-to-decision workflow support, and is that specification coherent enough for design estimation and business validation?
 
-Index each task and its acceptance criteria in FINAL_SUBMISSION.md. These replace generic end-to-end portfolio requirements. The endpoint is: A reviewable functional specification for an assisted lending workflow, ready for design estimation and business validation. No autonomous credit model or production credit decisions.
+**Audience:** Operations, underwriting, Risk, Compliance and the solution design/estimation team.
+
+| Task | Required content | Weight |
+|---|---|---|
+| F1 | Functional boundary; actor inventory; elicitation issue log and external dependencies. | 10% |
+| F2 | FRD with stable IDs, source references, functional/quality constraints, testable acceptance conditions and unresolved decisions. | 25% |
+| F3 | Use-case diagram; at least five detailed specifications with triggers, preconditions, main/alternative/exception flows and postconditions. | 20% |
+| F4 | Decision tables; policy/version applicability specification; exact authority boundaries and unresolved owner decisions. | 15% |
+| F5 | Conceptual data model; data dictionary; application state model including invalid transitions and audit needs. | 15% |
+| F6 | Requirements traceability matrix; boundary/exception scenarios with expected behaviour; review log distinguishing unexecuted from executed checks. | 10% |
+| F7 | Versioned specification index; decision summary; change/review record; design-estimation dependencies and readiness recommendation. | 5% |
+
+Use [DELIVERABLES_CHECKLIST.md](DELIVERABLES_CHECKLIST.md) to check package content, suggested paths and final repository records. The [task specification](../project/TASKS_DELIVERABLES_AND_ACCEPTANCE_CRITERIA.md) defines four analytical acceptance criteria per task. The final submission index must have a row for each task ID and link all required components. Grouping documents is acceptable; omitted analysis is not.
+
+No automatic approval model, real credit decision, new bureau integration, sole-trader/partnership expansion, collections or pricing redesign. No full process-transformation business case, product backlog, software build or executed UAT programme is required.
 
 ## 7. Reproduce and review
 
