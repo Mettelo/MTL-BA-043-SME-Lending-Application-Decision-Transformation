@@ -1,3 +1,5 @@
+> **Commission note:** This is historical fictional source evidence. Requests for full lifecycle outputs or pilot delivery are stakeholder ambitions to evaluate. The assessed scope and endpoint are defined in [the current project brief](../project/PROJECT_BRIEF.md). Later pilot evidence is optional and is not participant-executed testing.
+
 # Stakeholder and elicitation source pack
 **Mettelo BA-043 · Stage 2 · Interviews 8–10 July; workshop 13 July**
 All dialogue is synthetic. Roles provide source organisational context, not a completed influence assessment, engagement plan or RACI.
