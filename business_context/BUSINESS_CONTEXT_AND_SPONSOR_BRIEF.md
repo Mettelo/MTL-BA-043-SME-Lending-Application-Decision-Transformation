@@ -1,3 +1,5 @@
+> **Commission note:** This is historical fictional source evidence. Requests for full lifecycle outputs or pilot delivery are stakeholder ambitions to evaluate. The assessed scope and endpoint are defined in [the current project brief](../project/PROJECT_BRIEF.md). Later pilot evidence is optional and is not participant-executed testing.
+
 # Alderbridge SME finance — business context and sponsor initiation brief
 **Mettelo Business Analyst Project Studio · MTL-BA-043 · v2.0 · Stage 1**
 Issued 6 July 2026 by Daniel Reed, Chief Operating Officer. All local people, organisations, policies, figures and case records are synthetic.

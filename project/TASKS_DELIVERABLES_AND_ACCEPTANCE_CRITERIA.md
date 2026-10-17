@@ -1,202 +1,129 @@
-# What you must do, deliver and demonstrate
-**Mettelo Business Analyst Project Studio · MTL-BA-043 · Participant delivery contract**
-This is the task checklist for your own work. Read it at Stage 1. Mettelo supplies sources; you create the outputs below in your separate delivery repository.
+# MTL-BA-043 — tasks, deliverables and acceptance criteria
 
-## Project identity
-**Primary BA work:** Decision analysis, business rules and digital workflow analysis.  
-**Business scope:** Limited-company lending application, verified evidence, accountable underwriting and decision communication.  
-**Decision to support:** which governed process/workflow intervention to fund, with justified automation boundaries and evidence conditions.
+**Pathway: Functional Business Analyst**
 
-These are practical learning emphases, not an exhaustive industry taxonomy. BA work can also focus on products/software, data/reporting, integrations/migrations, compliance or strategic/business-model questions. The five studio projects share BA practices but have different domain models, decisions and controls.
+A reviewable functional specification for an assisted lending workflow, ready for design estimation and business validation. No autonomous credit model or production credit decisions.
 
-A mid-project change notice introduces a new constraint or piece of evidence. Your D08 response practises requirements/scope impact analysis. It does not make this an organisational change-management assignment. People/adoption considerations are part of D11 where relevant; you are not being asked to run an organisation-wide communications/training programme.
+These are assignment acceptance criteria used by the assessor. When an output asks you to author solution acceptance criteria, those are your proposed conditions for the business/system/product; they are not supplied answers.
 
-For broader professional context see [IIBA's description of business analysis](https://www.iiba.org/professional-development/career-centre/what-is-business-analysis/), checked 17 October 2026. The tasks below are Mettelo assignment requirements, not an IIBA-mandated document list.
+## F1 — Define the functional boundary
 
-## Two meanings of acceptance criteria
-**Assignment acceptance criteria:** the numbered checks under D01–D12 below tell you and the assessor what makes each submitted deliverable reviewable and acceptable. Mettelo supplies these.
+**Task:** Define the functional boundary to inform the commissioning decision.
 
-**Solution acceptance criteria:** in D04 you must author observable conditions for your proposed requirements/user goals. In D09 you turn them into tests, then in D10 assess what evidence exists. Mettelo does not pre-write the solution requirements, expected business rules or correct test outcomes for you.
+**Submit:** Scope, actor inventory and elicitation issue log.
 
-A deliverable is ready for review when its checks are addressed and open questions are explicit. Mark reviewer approval only if it actually occurred. Content acceptance is separate from the weighted score in [assessment criteria](ASSESSMENT_CRITERIA.md).
+**Use:** Sponsor, interviews and systems pack. Locate primary records through the release manifest; participant outputs named as inputs are your own work.
 
-## Required task/output map
-| Task | What you do | When | Files you create in your delivery repository |
-|---|---|---|---|
-| D01 | Initiation and problem framing | Stage 1; Week 1 | `docs/initiation/INITIATION_BRIEF.md`<br>`docs/initiation/RAID.csv` |
-| D02 | Stakeholder analysis and elicitation | Stage 2; Week 2 | `docs/discovery/STAKEHOLDER_AND_ELICITATION_REPORT.md` |
-| D03 | Current state, evidence and causes | Stage 3; Week 3 | `docs/current-state/CURRENT_STATE_AND_EVIDENCE_REPORT.md`<br>`docs/current-state/AS_IS_PROCESS.pdf`<br>`data/analysis/ANALYSIS_WORKBOOK.xlsx` |
-| D04 | Requirements and solution acceptance criteria | Stages 3–4; Weeks 3–4 | `docs/requirements/REQUIREMENTS_AND_ACCEPTANCE_CRITERIA.xlsx`<br>`docs/requirements/USE_CASES_OR_USER_STORIES.md` |
-| D05 | Versioned decision/authority and application information models | Stage 4; Week 4 | `docs/domain-models/DECISION_AND_AUTHORITY_RULE_PROPOSALS.md`<br>`docs/domain-models/APPLICATION_INFORMATION_MODEL.md` |
-| D06 | Future state and options appraisal | Stage 4; Week 4 | `docs/options-and-future-state/FUTURE_STATE_AND_OPTIONS.md`<br>`docs/options-and-future-state/TO_BE_PROCESS.pdf` |
-| D07 | Prioritisation, traceability and saved baseline | Stage 4 before any change notice | `docs/requirements/PRIORITISED_BASELINE.md`<br>`docs/requirements/TRACEABILITY.csv` |
-| D08 | Respond to changing constraints | Stage 5; after each notice | `docs/change/CHANGE_IMPACT_01.md`<br>`docs/change/CHANGE_IMPACT_02.md`<br>`docs/change/CHANGE_IMPACT_03.md` |
-| D09 | Prepare UAT independently | Stage 6; before experiment results | `docs/assurance/UAT_PLAN.md`<br>`docs/assurance/UAT_SCENARIOS.csv` |
-| D10 | Assess observations, issues and readiness | Stage 6; after 24 August evidence | `docs/assurance/OBSERVATION_AND_DEFECT_ASSESSMENT.csv`<br>`docs/assurance/READINESS_RECOMMENDATION.md` |
-| D11 | Value evaluation and operational transition | Stage 7; Week 8 | `docs/recommendation-and-benefits/BENEFITS_AND_TRANSITION_PLAN.md` |
-| D12 | Executive playback and professional submission | Stage 7; Week 8 | `docs/recommendation-and-benefits/EXECUTIVE_PLAYBACK.pdf`<br>`README.md`<br>`CONTRIBUTIONS.md`<br>`submission/FINAL_SUBMISSION.md` |
+**Acceptance criteria (10% of assessment):**
 
-The paths are the expected delivery layout, not files supplied in this master. For working registers/workbooks, a documented CSV/Markdown alternative is acceptable if it preserves the required fields, formulas/reproduction and navigation. Diagrams/playback may use SVG, PDF or another accessible export with editable source retained. If you combine artefacts into one substantial document, FINAL_SUBMISSION.md must link the exact sections for every task. Do not create empty documents just to satisfy filenames.
+- **F1-AC1:** Define start/end events and system boundary.
+- **F1-AC2:** Distinguish applicant, operations, underwriting and approval authority.
+- **F1-AC3:** Identify external dependencies.
+- **F1-AC4:** Record conflicting meanings of complete and indicative decision.
 
-## Project-specific coverage
-**Current-state and requirements coverage:** incomplete/stale/inaccessible documents; repeat requests; multiple intake records; company/bureau mismatch; policy exception or changed evidence; authority/version boundaries; withdrawal; indicative versus final decision. Investigate these situations; the list does not prescribe their correct future handling.
+**Review:** Check the output against every criterion, record unresolved questions and cross-reference related outputs rather than duplicating inconsistent versions.
 
-**Measurement distinctions:** applications versus document events, receipt versus verified-complete clocks, pending/withdrawn work, requested principal versus approval/funding/income. Define missing measures rather than invent facts or quietly use another denominator.
+## F2 — Specify functional behaviour
 
-**Non-functional/control investigation:** appropriate access, evidence/version audit, human oversight, supplier data use, document failure/recovery and explainable status. Establish values and acceptance evidence from the need/source, with assumptions and owner validation status explicit.
+**Task:** Specify functional behaviour to inform the commissioning decision.
 
-**UAT scope to consider:** document/version changes; mismatch; standard/exception and value boundaries; prospective policy changes; authority/rationale evidence; withdrawals/reminders; failed interfaces; inappropriate data/access. Derive actual scenarios/expected outcomes from your own requirements; this is coverage guidance, not a completed test set.
+**Submit:** Functional Requirements Document (FRD).
 
-**Relevant validators/decision owners:** sponsor, Operations, Underwriting, Credit Risk, Compliance, IT and Finance. A source role does not imply blanket approval.
+**Use:** Operational evidence, policy and transaction supplement. Locate primary records through the release manifest; participant outputs named as inputs are your own work.
 
-## D01 — Initiation and problem framing
-**When:** Stage 1; Week 1  
-**Required outputs:** `docs/initiation/INITIATION_BRIEF.md`, `docs/initiation/RAID.csv`
+**Acceptance criteria (25% of assessment):**
 
-**Work:** State the business need, impact, decision sought, proposed objectives, boundaries, assumptions and discovery approach. Start the RAID and maintain it throughout.
+- **F2-AC1:** Use stable requirement IDs and source references.
+- **F2-AC2:** Cover intake, document requests, verification, status, authorised decision, withdrawal and audit.
+- **F2-AC3:** Distinguish functional requirements, constraints and non-functional needs.
+- **F2-AC4:** State unresolved decisions and testable acceptance conditions.
 
-**Acceptance criteria**
-- **D01.A1** — Identify the commissioned decision and distinguish the sponsor solution hypothesis from an agreed business need.
-- **D01.A2** — Support the claimed impact and starting performance with source references, units, time period and limitations.
-- **D01.A3** — State in-scope/out-of-scope work, dependencies and unresolved assumptions with proposed owner/next action.
-- **D01.A4** — Give observable proposed success measures and validation status; do not invent approved targets or risk decisions.
+**Review:** Check the output against every criterion, record unresolved questions and cross-reference related outputs rather than duplicating inconsistent versions.
 
-## D02 — Stakeholder analysis and elicitation
-**When:** Stage 2; Week 2  
-**Required outputs:** `docs/discovery/STAKEHOLDER_AND_ELICITATION_REPORT.md`
+## F3 — Model actor-system interactions
 
-**Work:** Create your own stakeholder register/analysis, appropriate influence/interest view, engagement approach, elicitation synthesis and follow-up/conflict log.
+**Task:** Model actor-system interactions to inform the commissioning decision.
 
-**Acceptance criteria**
-- **D02.A1** — Cover relevant supplied roles and identify additional missing voices/decision owners, with reasoning for engagement priorities.
-- **D02.A2** — Separate sourced facts, preferences, ambiguous needs, constraints and assumptions; cite the interview/workshop section.
-- **D02.A3** — For each material contradiction or unclear need, identify a purposeful follow-up, appropriate owner and unresolved/validated status.
-- **D02.A4** — Keep supplied simulated interviews separate from your own questions; never invent completed meetings, responses or approval.
+**Submit:** Use-case diagram and at least five detailed use-case specifications.
 
-## D03 — Current state, evidence and causes
-**When:** Stage 3; Week 3  
-**Required outputs:** `docs/current-state/CURRENT_STATE_AND_EVIDENCE_REPORT.md`, `docs/current-state/AS_IS_PROCESS.pdf`, `data/analysis/ANALYSIS_WORKBOOK.xlsx`
+**Use:** F1–F2 and source exceptions. Locate primary records through the release manifest; participant outputs named as inputs are your own work.
 
-**Work:** Build your own end-to-end current-state model and reproducible analysis. Investigate possible causes and exceptions rather than merely repeat complaints.
+**Acceptance criteria (20% of assessment):**
 
-**Acceptance criteria**
-- **D03.A1** — Show actors, hand-offs, decisions, inputs/outputs, waits and relevant exceptions; make source gaps explicit.
-- **D03.A2** — Provide calculations with input IDs/files, joins, formulas, denominators, cutoff, units and exclusions so another reviewer can reproduce material figures.
-- **D03.A3** — Distinguish symptoms, observed facts and causal hypotheses; state supporting/contradicting evidence and what would test a hypothesis.
-- **D03.A4** — Address the project-specific paths and measurement distinctions listed below; do not remove open/failed/repeated work to improve a result.
+- **F3-AC1:** Identify actors and boundary consistently with F1.
+- **F3-AC2:** Specify trigger, preconditions, main flow, alternatives, exceptions and postconditions.
+- **F3-AC3:** Cover incomplete evidence, mismatch and withdrawal.
+- **F3-AC4:** Trace steps to FRD requirements without using a diagram as the whole specification.
 
-## D04 — Requirements and solution acceptance criteria
-**When:** Stages 3–4; Weeks 3–4  
-**Required outputs:** `docs/requirements/REQUIREMENTS_AND_ACCEPTANCE_CRITERIA.xlsx`, `docs/requirements/USE_CASES_OR_USER_STORIES.md`
+**Review:** Check the output against every criterion, record unresolved questions and cross-reference related outputs rather than duplicating inconsistent versions.
 
-**Work:** Elicit and write your own business, stakeholder, functional, non-functional and transition needs. Use use cases or user stories to express relevant user goals; include their exceptions and acceptance criteria.
+## F4 — Specify controlled decision rules
 
-**Acceptance criteria**
-- **D04.A1** — Each catalogue entry has a stable ID, type, need statement, rationale, source, proposed validating owner, priority, status and related acceptance evidence.
-- **D04.A2** — Each functional outcome has observable acceptance criteria stating condition/input or trigger, expected outcome and relevant failure/exception behaviour. Do not substitute vague words such as fast or user-friendly.
-- **D04.A3** — Each applicable non-functional need states a metric/condition, target or explicitly proposed assumption, units and verification method; transition/control needs have objective completion evidence.
-- **D04.A4** — Cover material goals and critical exceptions, distinguish needs from unvalidated supplier designs, and record unresolved conflicts/approval rather than silently resolving them.
+**Task:** Specify controlled decision rules to inform the commissioning decision.
 
-## D05 — Versioned decision/authority and application information models
-**When:** Stage 4; Week 4  
-**Required outputs:** `docs/domain-models/DECISION_AND_AUTHORITY_RULE_PROPOSALS.md`, `docs/domain-models/APPLICATION_INFORMATION_MODEL.md`
+**Submit:** Decision tables and rule/version applicability specification.
 
-**Work:** Create your own versioned decision/authority rule proposals and application/document/decision information model. This is business-rule analysis; no scoring model or live lending decision is required.
+**Use:** Policy versions and change notice 01. Locate primary records through the release manifest; participant outputs named as inputs are your own work.
 
-**Acceptance criteria**
-- **D05.A1** — Distinguish product/customer perimeter, standard and exception treatment, authority boundaries and effective-date/version questions.
-- **D05.A2** — Show document presence, verification, company/application identity, decision evidence, rationale, authority and withdrawal as separate concepts.
-- **D05.A3** — Identify boundary and exception cases using the source policy; mark proposed interpretations and missing authority facts for review.
-- **D05.A4** — Retain human-review/data-use dependencies; do not invent automated approval thresholds, model accuracy or regulatory sign-off.
+**Acceptance criteria (15% of assessment):**
 
-## D06 — Future state and options appraisal
-**When:** Stage 4; Week 4  
-**Required outputs:** `docs/options-and-future-state/FUTURE_STATE_AND_OPTIONS.md`, `docs/options-and-future-state/TO_BE_PROCESS.pdf`
+- **F4-AC1:** Address exact £50k/£75k/£100k/£150k boundaries and exceptions.
+- **F4-AC2:** Separate authority from credit eligibility.
+- **F4-AC3:** Handle effective dates, existing cases and material changes as explicit decisions.
+- **F4-AC4:** Flag gaps rather than inventing approved policy.
 
-**Work:** Show the proposed application-to-decision workflow, ownership, exceptions, evidence/version treatment and customer communication. Do not assume automation or a new credit model. Compare the do-minimum baseline and at least two materially different credible interventions; explain ruled-out options rather than inventing feasibility.
+**Review:** Check the output against every criterion, record unresolved questions and cross-reference related outputs rather than duplicating inconsistent versions.
 
-**Acceptance criteria**
-- **D06.A1** — Proposed future-state models show roles, decisions, hand-offs, exceptions and control implications and link material changes to participant requirements.
-- **D06.A2** — Compare options on consistent scope, one-off/recurring/internal costs, time, dependencies, usability/adoption, control and value assumptions; retain source exclusions.
-- **D06.A3** — If scores/weights are used, justify them and show sensitivity or uncertainty; distinguish source prices/claims from your evaluation.
-- **D06.A4** — Recommend a provisional option/sequence with reasons, trade-offs and decisions needed; do not claim purchase or owner sign-off.
+## F5 — Specify data and state behaviour
 
-## D07 — Prioritisation, traceability and saved baseline
-**When:** Stage 4 before any change notice  
-**Required outputs:** `docs/requirements/PRIORITISED_BASELINE.md`, `docs/requirements/TRACEABILITY.csv`
+**Task:** Specify data and state behaviour to inform the commissioning decision.
 
-**Work:** Create a feasible scope/priority baseline and keep the source-to-value chain visible. Save this version before Stage 5.
+**Submit:** Conceptual data model, data dictionary and application state model.
 
-**Acceptance criteria**
-- **D07.A1** — Priorities have rationale tied to need, control, dependency, value and delivery constraints; explain trade-offs rather than mark everything essential.
-- **D07.A2** — Treat each material requirement as retained/deferred/rejected or unresolved with a reason and source/decision link.
-- **D07.A3** — Trace material sources/needs to requirements, rule/design/option, user-goal acceptance criteria, later tests and intended measures; identify coverage gaps.
-- **D07.A4** — Reproduce the pre-notice version through a dated commit/tag/PR and maintain RAID; do not manufacture earlier history after reading changes.
+**Use:** CSV schemas, systems notes and F2–F4. Locate primary records through the release manifest; participant outputs named as inputs are your own work.
 
-## D08 — Respond to changing constraints
-**When:** Stage 5; after each notice  
-**Required outputs:** `docs/change/CHANGE_IMPACT_01.md`, `docs/change/CHANGE_IMPACT_02.md`, `docs/change/CHANGE_IMPACT_03.md`
+**Acceptance criteria (15% of assessment):**
 
-**Work:** For each of the three supplied notices, assess the effect on your saved baseline and request a decision. This is requirements/scope impact analysis, not the whole project.
+- **F5-AC1:** Define identifiers, ownership and relationships.
+- **F5-AC2:** Distinguish document request events from distinct applications.
+- **F5-AC3:** Define allowed/invalid state transitions and rationale audit needs.
+- **F5-AC4:** Reconcile model terminology with FRD and use cases.
 
-**Acceptance criteria**
-- **D08.A1** — Identify the notice, changed fact/assumption and affected or reasoned-unaffected participant requirements, processes, models and options.
-- **D08.A2** — Show before/after scope/priority/cost/time/control/data/test/value implications and explain alternatives, risk and dependencies.
-- **D08.A3** — Identify who must decide, the requested decision, evidence, status and residual uncertainty; do not present a request as approval.
-- **D08.A4** — Retain the original and each response/re-baseline version, with traceability and RAID updates; address all three notices sequentially.
+**Review:** Check the output against every criterion, record unresolved questions and cross-reference related outputs rather than duplicating inconsistent versions.
 
-## D09 — Prepare UAT independently
-**When:** Stage 6; before experiment results  
-**Required outputs:** `docs/assurance/UAT_PLAN.md`, `docs/assurance/UAT_SCENARIOS.csv`
+## F6 — Validate the specification
 
-**Work:** Define acceptance coverage and your own test scenarios from your own baseline before reviewing supplier observations.
+**Task:** Validate the specification to inform the commissioning decision.
 
-**Acceptance criteria**
-- **D09.A1** — Plan states scope, roles, environment/data, entry/exit/readiness conditions, execution approach and evidence/defect handling.
-- **D09.A2** — Each scenario has an ID, linked requirement/acceptance criterion, actor/preconditions, test data, action/steps and observable expected result.
-- **D09.A3** — Cover positive, negative/exception, control/access and failure/recovery behaviour relevant to this project; justify omitted/blocked tests.
-- **D09.A4** — Keep expected results independently derived. Mark tests not executed when no execution evidence exists; do not fabricate results.
+**Submit:** Requirements traceability matrix, boundary/exception scenarios and review log.
 
-## D10 — Assess observations, issues and readiness
-**When:** Stage 6; after 24 August evidence  
-**Required outputs:** `docs/assurance/OBSERVATION_AND_DEFECT_ASSESSMENT.csv`, `docs/assurance/READINESS_RECOMMENDATION.md`
+**Use:** F2–F5 and all three notices. Locate primary records through the release manifest; participant outputs named as inputs are your own work.
 
-**Work:** Assess the supplied prototype evidence against your needs. The prototype may differ from your option; explain that difference rather than changing your baseline to pass it.
+**Acceptance criteria (10% of assessment):**
 
-**Acceptance criteria**
-- **D10.A1** — Cite source observation/case IDs and distinguish an observed fact, an inferred issue, a proposed defect and an actual test outcome.
-- **D10.A2** — For material issues, record affected need/test, impact/severity rationale, owner/next action, proposed disposition and retest evidence needed.
-- **D10.A3** — Identify acceptance gaps and limits of operator samples, assistance, timing and causal claims; no unsupported clinical/security/legal or production approval.
-- **D10.A4** — Give a proceed/conditional/defer recommendation with explicit readiness conditions, residual risks and decision owners.
+- **F6-AC1:** Trace material sources to requirements, rules, use cases and expected behaviour.
+- **F6-AC2:** Include threshold, policy-date, duplicate, mismatch and withdrawn cases.
+- **F6-AC3:** Assess automation/data-use claims without accepting them as requirements.
+- **F6-AC4:** Distinguish expected results from unexecuted tests.
 
-## D11 — Value evaluation and operational transition
-**When:** Stage 7; Week 8  
-**Required outputs:** `docs/recommendation-and-benefits/BENEFITS_AND_TRANSITION_PLAN.md`
+**Review:** Check the output against every criterion, record unresolved questions and cross-reference related outputs rather than duplicating inconsistent versions.
 
-**Work:** Evaluate what the supplied evidence can support and propose how the selected intervention would be introduced and measured. Address adoption only to the extent needed for the BA recommendation.
+## F7 — Handover the functional baseline
 
-**Acceptance criteria**
-- **D11.A1** — Each material proposed benefit/measure has a definition/formula, baseline/source or missing-data status, target/assumption, owner, collection method and review period.
-- **D11.A2** — Distinguish observed result, forecast benefit, capacity value and cash; state confounding, attribution and data gaps.
-- **D11.A3** — Cover affected roles, training/communication needs, open-case/data treatment, support, cutover/rollback dependencies and appropriate approvals for the proposed scope.
-- **D11.A4** — Identify what would confirm value or trigger correction/deferment. A full organisational change-management campaign or live deployment is not required.
+**Task:** Handover the functional baseline to inform the commissioning decision.
 
-## D12 — Executive playback and professional submission
-**When:** Stage 7; Week 8  
-**Required outputs:** `docs/recommendation-and-benefits/EXECUTIVE_PLAYBACK.pdf`, `README.md`, `CONTRIBUTIONS.md`, `submission/FINAL_SUBMISSION.md`
+**Submit:** Versioned functional specification and decision summary.
 
-**Work:** Deliver a concise decision-focused playback and a navigable final portfolio in your separate Mettelo delivery repository.
+**Use:** Participant specification. Locate primary records through the release manifest; participant outputs named as inputs are your own work.
 
-**Acceptance criteria**
-- **D12.A1** — Playback explains need/evidence, option decision, costs/value assumptions, control/readiness conditions, remaining uncertainty and requested next decisions.
-- **D12.A2** — Final index maps D01–D12 to actual deliverable paths and final versions; disclose justified unresolved/blocked items rather than hide them.
-- **D12.A3** — Reproduction instructions, meaningful issues/branches/commits/material PRs, individual contribution and honest review/AI-assistance evidence are accessible.
-- **D12.A4** — Verified designated Mettelo access, final commit and v1.0-mettelo-submission tag resolve to the submitted outputs; hand over the delivery repository URL through the cohort route.
+**Acceptance criteria (5% of assessment):**
 
+- **F7-AC1:** Identify scope exclusions, unresolved approvals and estimation dependencies.
+- **F7-AC2:** Show revisions caused by policy clarification.
+- **F7-AC3:** Index all F deliverables and their versions.
+- **F7-AC4:** Recommend whether the specification is ready for design review with conditions.
 
-## How review works
-Use the matching task ID, source IDs and acceptance-check IDs in issues/PR reviews. The participant produces the work; a facilitator/assessor reviews it against these checks and the weighted rubric. Functional/clinical/security/legal/data approval remains with the appropriate simulated owner and must be marked unavailable where it cannot be obtained.
+**Review:** Check the output against every criterion, record unresolved questions and cross-reference related outputs rather than duplicating inconsistent versions.
 
-The timeline and release gates control when evidence is opened. Prepare D09 before receiving Stage 6 results. Retain the D07 pre-change baseline and each D08 response. The required final handover is a separate repository URL and tag, not answer files pushed to the Mettelo master.
-
-At submission, include one index row per D01–D12 with output path/section, final version, self-review status, known gap and approval/review evidence if available. All twelve tasks need a substantive response; a blocked item needs evidence, impact and next action, not an empty file or invented result. Assessment rewards reasoning and coverage rather than document count.
+## Portfolio-wide conditions
+All material conclusions must have evidence references or be labelled proposals/assumptions. Preserve raw data, explain transformations and report limitations. Keep diagrams readable and terms/identifiers consistent. Supply an index to every task and identify contributors and AI assistance. Additional documents earn no credit merely for their volume. No completed participant deliverables are provided in the master.
